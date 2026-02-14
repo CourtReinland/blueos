@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "profiles": {
+    "anthropic:sakura": {
+      "type": "token",
+      "provider": "anthropic",
+      "token": "sk-ant-oat01-BdsKgX--pLu-TCBGzBYYOnmoxtsF4_qAZmC6ElOVF78FrGvUJuUgGfVfJ4shj5XSuev"
+    },
+    "anthropic:default": {
+      "type": "api_key",
+      "provider": "anthropic",
+      "key": "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"
+    }
+  },
+  "lastGood": {
+    "anthropic": "anthropic:default"
+  },
+  "usageStats": {
+    "anthropic:sakura": {
+      "errorCount": 3,
+      "lastFailureAt": 1769761147942,
+      "lastUsed": 1769759783076,
+      "failureCounts": {
+        "auth": 3
+      },
+      "cooldownUntil": 1769762647942
+    },
+    "anthropic:default": {
+      "lastUsed": 1769761154008,
+      "errorCount": 0
+    }
+  }
+}

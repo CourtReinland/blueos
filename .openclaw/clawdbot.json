@@ -1,0 +1,87 @@
+{
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "agents": {
+    "defaults": {
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      },
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "workspace": "/Users/capricorn/clawd"
+    }
+  },
+  "gateway": {
+    "mode": "local",
+    "auth": {
+      "mode": "token",
+      "token": "67551919b36039777052369f44e9a744f15809d40029ce2c"
+    },
+    "port": 18789,
+    "bind": "loopback",
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "auth": {
+    "profiles": {
+      "anthropic:sakura": {
+        "provider": "anthropic",
+        "mode": "token"
+      }
+    }
+  },
+  "plugins": {
+    "entries": {
+      "telegram": {
+        "enabled": true
+      }
+    }
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "botToken": "8315531542:AAEwwhZYg1K_xdSL2cQbuqbGwOKHTpW2MKo"
+    }
+  },
+  "skills": {
+    "install": {
+      "nodeManager": "npm"
+    },
+    "entries": {
+      "openai-image-gen": {
+        "apiKey": "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"
+      },
+      "openai-whisper-api": {
+        "apiKey": "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"
+      },
+      "sag": {
+        "apiKey": "sk_da568386c58dc09485656c201c01fecdd18d986d5d25d3fb"
+      }
+    }
+  },
+  "hooks": {
+    "internal": {
+      "enabled": true,
+      "entries": {
+        "session-memory": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "wizard": {
+    "lastRunAt": "2026-01-29T07:17:33.010Z",
+    "lastRunVersion": "2026.1.24-3",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local"
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.1.24-3",
+    "lastTouchedAt": "2026-01-29T07:17:33.027Z"
+  }
+}
