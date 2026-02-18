@@ -4,12 +4,12 @@
     "anthropic:sakura": {
       "type": "token",
       "provider": "anthropic",
-      "token": "sk-ant-oat01-BdsKgX--pLu-TCBGzBYYOnmoxtsF4_qAZmC6ElOVF78FrGvUJuUgGfVfJ4shj5XSuev"
+      "token": 
     },
     "anthropic:default": {
       "type": "api_key",
       "provider": "anthropic",
-      "key": "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"
+      "key": 
     }
   },
   "lastGood": {
